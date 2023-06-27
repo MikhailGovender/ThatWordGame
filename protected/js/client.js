@@ -7,7 +7,7 @@ import { ClientPlayer } from "./player-state-machine.js"
 
 let client = null
 
-const wsURL = window.location.host.includes("localhost") ? `ws://${window.location.host}:5000/` : `wss://${window.location.host}:5000/`;
+const wsURL = window.location.host.includes("localhost") ? `ws://${window.location.host}:5000/` : `wss://${window.location.host}/`;
 const socket = new WebSocket(wsURL);
 
 async function fetchName() {
