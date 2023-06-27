@@ -1,4 +1,5 @@
 
+import {fetch} from "./node-fetch";
 const loginButton = document.getElementById("login-submit");
 const errorField = document.getElementById("error-message");
 const loginForm = document.getElementById("login-form");
